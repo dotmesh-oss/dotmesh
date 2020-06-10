@@ -18,7 +18,7 @@ push_dind_prov:
 	docker push ${REPOSITORY}dind-dynamic-provisioner:${DOCKER_TAG}
 
 build_operator:
-	docker build -t ${REPOSITORY}dotmesh-operator:${DOCKER_TAG} --build-arg VERSION=${VERSION} --build-arg STABLE_DOTMESH_SERVER_IMAGE=${REPOSITORY}/dotmesh-server:${DOCKER_TAG} . -f dockerfiles/operator.Dockerfile
+	docker build -t ${REPOSITORY}dotmesh-operator:${DOCKER_TAG} --build-arg VERSION=${VERSION} --build-arg STABLE_DOTMESH_SERVER_IMAGE=${REPOSITORY}dotmesh-server:${DOCKER_TAG} . -f dockerfiles/operator.Dockerfile
 
 push_operator:
 	docker push ${REPOSITORY}dotmesh-operator:${DOCKER_TAG}
