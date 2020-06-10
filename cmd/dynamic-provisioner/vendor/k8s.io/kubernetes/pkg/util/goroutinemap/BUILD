@@ -7,7 +7,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["goroutinemap.go"],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/dynamic-provisioner/vendor/k8s.io/kubernetes/pkg/util/goroutinemap",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/dynamic-provisioner/vendor/k8s.io/kubernetes/pkg/util/goroutinemap",
     importpath = "k8s.io/kubernetes/pkg/util/goroutinemap",
     tags = ["automanaged"],
     deps = [

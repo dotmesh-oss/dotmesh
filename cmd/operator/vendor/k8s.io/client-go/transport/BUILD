@@ -10,7 +10,7 @@ go_library(
         "round_trippers.go",
         "transport.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/transport",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/transport",
     importpath = "k8s.io/client-go/transport",
     deps = [
         "//cmd/operator/vendor/github.com/golang/glog:go_default_library",

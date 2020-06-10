@@ -12,7 +12,7 @@ go_library(
         "decoder.go",
         "encoder.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/rest/watch",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/rest/watch",
     importpath = "k8s.io/client-go/rest/watch",
     deps = [
         "//cmd/operator/vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",

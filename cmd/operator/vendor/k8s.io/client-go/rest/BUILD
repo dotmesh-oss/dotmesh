@@ -15,7 +15,7 @@ go_library(
         "versions.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/rest",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/rest",
     importpath = "k8s.io/client-go/rest",
     deps = [
         "//cmd/operator/vendor/github.com/golang/glog:go_default_library",

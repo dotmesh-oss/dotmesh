@@ -5,7 +5,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["pager.go"],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/pager",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/pager",
     importpath = "k8s.io/client-go/tools/pager",
     deps = [
         "//cmd/operator/vendor/golang.org/x/net/context:go_default_library",

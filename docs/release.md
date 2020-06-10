@@ -145,7 +145,7 @@ Push `release-X.Y` and delete `test-X.Y`.
 
 We direct people here to see the release history:
 
-https://github.com/dotmesh-io/dotmesh/releases
+https://github.com/dotmesh-oss/dotmesh/releases
 
 This currently needs to be manually updated.
 

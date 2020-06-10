@@ -25,9 +25,9 @@ before_script:
     - mkdir -p gopath
     - export GOPATH=$(pwd)/gopath
     - cd gopath
-    - mkdir -p src/github.com/dotmesh-io
-    - ln -s `realpath ..` ./src/github.com/dotmesh-io/dotmesh
-    - cd src/github.com/dotmesh-io/dotmesh
+    - mkdir -p src/github.com/dotmesh-oss
+    - ln -s `realpath ..` ./src/github.com/dotmesh-oss/dotmesh
+    - cd src/github.com/dotmesh-oss/dotmesh
     - while [ -f /dotmesh-test-cleanup.lock ]; do echo "waiting for test cleanup..."; sleep 1; done
 
 build_client_linux:

@@ -25,7 +25,7 @@ go_library(
         "thread_safe_store.go",
         "undelta_store.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/cache",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/cache",
     importpath = "k8s.io/client-go/tools/cache",
     deps = [
         "//cmd/operator/vendor/github.com/golang/glog:go_default_library",

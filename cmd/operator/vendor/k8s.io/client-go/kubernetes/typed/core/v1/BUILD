@@ -33,7 +33,7 @@ go_library(
         "service_expansion.go",
         "serviceaccount.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/core/v1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/core/v1",
     importpath = "k8s.io/client-go/kubernetes/typed/core/v1",
     deps = [
         "//cmd/operator/vendor/k8s.io/api/core/v1:go_default_library",

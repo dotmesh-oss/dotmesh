@@ -8,14 +8,14 @@ The `testtools.go` library should be imported into a test like follows:
 
 ```bash
 dep init
-dep ensure -add github.com/dotmesh-io/citools github.com/dotmesh-io/citools
+dep ensure -add github.com/dotmesh-oss/citools github.com/dotmesh-oss/citools
 ```
 
 Then within the testing file:
 
 ```go
 import (
-  "github.com/dotmesh-io/citools"
+  "github.com/dotmesh-oss/citools"
 )
 
 

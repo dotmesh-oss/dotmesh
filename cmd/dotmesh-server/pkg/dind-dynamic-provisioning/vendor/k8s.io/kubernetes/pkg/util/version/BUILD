@@ -10,7 +10,7 @@ go_library(
         "doc.go",
         "version.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/dotmesh-server/pkg/dind-dynamic-provisioning/vendor/k8s.io/kubernetes/pkg/util/version",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/dotmesh-server/pkg/dind-dynamic-provisioning/vendor/k8s.io/kubernetes/pkg/util/version",
     importpath = "k8s.io/kubernetes/pkg/util/version",
     tags = ["automanaged"],
 )

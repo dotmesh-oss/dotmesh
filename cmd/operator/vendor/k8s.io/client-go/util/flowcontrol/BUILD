@@ -8,7 +8,7 @@ go_library(
         "backoff.go",
         "throttle.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/util/flowcontrol",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/util/flowcontrol",
     importpath = "k8s.io/client-go/util/flowcontrol",
     deps = [
         "//cmd/operator/vendor/github.com/juju/ratelimit:go_default_library",

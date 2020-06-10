@@ -16,7 +16,7 @@ go_library(
         "overrides.go",
         "validation.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/clientcmd",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/tools/clientcmd",
     importpath = "k8s.io/client-go/tools/clientcmd",
     deps = [
         "//cmd/operator/vendor/github.com/golang/glog:go_default_library",

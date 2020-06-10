@@ -27,7 +27,7 @@ if [ -z "${GOPATH}" ]; then
   export PATH=/home/vagrant/bin:$PATH
   echo "export GOPATH=${GOPATH}" >> $HOME/.bash_profile
   echo "export PATH=\$HOME/bin:\$PATH" >> $HOME/.bash_profile
-  echo "export DM_FOLDER=\$GOPATH/src/github.com/dotmesh-io/dotmesh" >> $HOME/.bash_profile
+  echo "export DM_FOLDER=\$GOPATH/src/github.com/dotmesh-oss/dotmesh" >> $HOME/.bash_profile
 fi
 
 mkdir -p $GOPATH

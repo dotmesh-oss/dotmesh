@@ -42,7 +42,7 @@
   version = "v1.1.0"
 
 [[projects]]
-  name = "github.com/dotmesh-io/go-checkpoint"
+  name = "github.com/dotmesh-oss/go-checkpoint"
   packages = ["."]
   revision = "ef090642f98ccf2fdff0af7eaef6c29e6e43903b"
 

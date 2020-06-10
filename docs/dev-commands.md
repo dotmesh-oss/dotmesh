@@ -220,8 +220,8 @@ Assuming you have set your GOPATH (e.g. to `$HOME/gocode`):
 ```
 ssh-keygen ## If you haven't already
 ## Now add your ~/.ssh/id_rsa.pub to your user settings on Gitlab and Github
-mkdir -p $GOPATH/src/github.com/dotmesh-io
-cd $GOPATH/src/github.com/dotmesh-io
+mkdir -p $GOPATH/src/github.com/dotmesh-oss
+cd $GOPATH/src/github.com/dotmesh-oss
 git clone git@github.com:dotmesh-io/dotmesh
 ```
 
@@ -252,7 +252,7 @@ You have to do some one-off setup and priming of docker images before these
 tests will run:
 
 ```
-cd $GOPATH/src/github.com/dotmesh-io/dotmesh
+cd $GOPATH/src/github.com/dotmesh-oss/dotmesh
 bash ./scripts/prime.sh
 ```
 
@@ -264,7 +264,7 @@ bash ./scripts/prime.sh
 To run the test suite, run:
 
 ```
-cd $GOPATH/src/github.com/dotmesh-io/dotmesh
+cd $GOPATH/src/github.com/dotmesh-oss/dotmesh
 ./scripts/prep-tests.sh && ./scripts/test.sh -short
 ```
 
@@ -284,7 +284,7 @@ example.
 
 ### NEW: AUTOMATED CI SETUP
 
-This process is now automated here: [https://github.com/dotmesh-io/ops/blob/master/setup-gitlab-runner.sh](https://github.com/dotmesh-io/ops/blob/master/setup-gitlab-runner.sh)
+This process is now automated here: [https://github.com/dotmesh-oss/ops/blob/master/setup-gitlab-runner.sh](https://github.com/dotmesh-oss/ops/blob/master/setup-gitlab-runner.sh)
 
 ### OLD MANUAL SETUP FOLLOWS
 
@@ -301,7 +301,7 @@ gitlab-runner ALL=(ALL:ALL) NOPASSWD:ALL
 
 MsacOS runners should similarly have a GitLab runner installed, and should
 additionally have
-[auto-upgrade-docker](https://github.com/dotmesh-io/auto-upgrade-docker)
+[auto-upgrade-docker](https://github.com/dotmesh-oss/auto-upgrade-docker)
 configured so that we can track breaking changes to Docker for Mac.
 
 When you are asked details in the registration phase, here's what I did for a Ubuntu runner:
@@ -385,8 +385,8 @@ cd dotmesh-instrumentation
 ./up.sh
 
 # clone the dotmesh repo
-mkdir -p $GOPATH/src/github.com/dotmesh-io
-cd $GOPATH/src/github.com/dotmesh-io
+mkdir -p $GOPATH/src/github.com/dotmesh-oss
+cd $GOPATH/src/github.com/dotmesh-oss
 git clone git@github.com:dotmesh-io/dotmesh.git
 cd dotmesh
 ./prime.sh

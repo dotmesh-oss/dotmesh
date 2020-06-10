@@ -13,7 +13,7 @@ go_library(
         "networking_client.go",
         "networkpolicy.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/networking/v1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/networking/v1",
     importpath = "k8s.io/client-go/kubernetes/typed/networking/v1",
     deps = [
         "//cmd/operator/vendor/k8s.io/api/networking/v1:go_default_library",

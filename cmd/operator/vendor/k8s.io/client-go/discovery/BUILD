@@ -14,7 +14,7 @@ go_library(
         "restmapper.go",
         "unstructured.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/discovery",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/discovery",
     importpath = "k8s.io/client-go/discovery",
     deps = [
         "//cmd/operator/vendor/github.com/golang/glog:go_default_library",

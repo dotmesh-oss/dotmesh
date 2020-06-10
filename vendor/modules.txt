@@ -157,12 +157,12 @@ github.com/dgrijalva/jwt-go
 ## explicit
 github.com/docker/distribution/digest
 github.com/docker/distribution/reference
-# github.com/dotmesh-io/citools v0.0.0-20200414134058-7aa7221e95a0
+# github.com/dotmesh-oss/citools v0.0.0-20200414134058-7aa7221e95a0
 ## explicit
-github.com/dotmesh-io/citools
-# github.com/dotmesh-io/go-checkpoint v0.0.0-20180205120253-edad9decbae8
+github.com/dotmesh-oss/citools
+# github.com/dotmesh-oss/go-checkpoint v0.0.0-20180205120253-edad9decbae8
 ## explicit
-github.com/dotmesh-io/go-checkpoint
+github.com/dotmesh-oss/go-checkpoint
 # github.com/dsnet/compress v0.0.1
 ## explicit
 github.com/dsnet/compress

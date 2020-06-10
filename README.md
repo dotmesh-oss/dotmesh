@@ -44,7 +44,7 @@ Verify that the `dm` client can talk to the `dotmesh-server`:
 dm version
 ```
 
-If the installation fails, please [report an issue](https://github.com/dotmesh-io/dotmesh).
+If the installation fails, please [report an issue](https://github.com/dotmesh-oss/dotmesh).
 You can also experiment in our [online learning environment](https://dotmesh.com/try-dotmesh/).
 Thanks!
 

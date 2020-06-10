@@ -13,7 +13,7 @@ go_library(
         "podpreset.go",
         "settings_client.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/settings/v1alpha1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/settings/v1alpha1",
     importpath = "k8s.io/client-go/kubernetes/typed/settings/v1alpha1",
     deps = [
         "//cmd/operator/vendor/k8s.io/api/settings/v1alpha1:go_default_library",
