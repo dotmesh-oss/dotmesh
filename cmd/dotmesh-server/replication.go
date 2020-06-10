@@ -10,13 +10,13 @@ import (
 	"os/exec"
 	"strings"
 
-	dmclient "github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
-	"github.com/dotmesh-io/dotmesh/pkg/zfs"
+	dmclient "github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/zfs"
 	"github.com/gorilla/mux"
 
-	"github.com/dotmesh-io/dotmesh/pkg/fsm"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/fsm"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

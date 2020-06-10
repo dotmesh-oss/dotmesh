@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/archiver"
-	"github.com/dotmesh-io/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/archiver"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
 
-	"github.com/dotmesh-io/citools"
+	"github.com/dotmesh-oss/citools"
 )
 
 func TestS3Api(t *testing.T) {

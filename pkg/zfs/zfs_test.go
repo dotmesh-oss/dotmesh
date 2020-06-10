@@ -12,8 +12,8 @@ import (
 	"github.com/sirupsen/logrus"
 	logtest "github.com/sirupsen/logrus/hooks/test"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
 )
 
 var out = `CREATION

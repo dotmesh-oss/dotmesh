@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
 )
 
 // pretty-print MiB or KiB or GiB

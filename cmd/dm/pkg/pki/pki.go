@@ -26,7 +26,7 @@ import (
 	"net"
 	"path"
 
-	certutil "github.com/dotmesh-io/dotmesh/cmd/dm/pkg/cert"
+	certutil "github.com/dotmesh-oss/dotmesh/cmd/dm/pkg/cert"
 )
 
 type Configuration struct {

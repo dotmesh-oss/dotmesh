@@ -6,7 +6,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/dotmesh-io/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
 	"github.com/spf13/cobra"
 )
 

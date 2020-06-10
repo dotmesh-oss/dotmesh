@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/dotmesh-io/dotmesh/pkg/config"
-	"github.com/dotmesh-io/dotmesh/pkg/container"
-	"github.com/dotmesh-io/dotmesh/pkg/messaging/nats"
-	"github.com/dotmesh-io/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/config"
+	"github.com/dotmesh-oss/dotmesh/pkg/container"
+	"github.com/dotmesh-oss/dotmesh/pkg/messaging/nats"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 )
 
 const DEFAULT_BRANCH = "master"

@@ -16,17 +16,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/config"
-	"github.com/dotmesh-io/dotmesh/pkg/messaging/nats"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/config"
+	"github.com/dotmesh-oss/dotmesh/pkg/messaging/nats"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 
 	// registering metric counters
-	_ "github.com/dotmesh-io/dotmesh/pkg/metrics"
+	_ "github.com/dotmesh-oss/dotmesh/pkg/metrics"
 
 	// notification provider
-	_ "github.com/dotmesh-io/dotmesh/pkg/notification/nats"
+	_ "github.com/dotmesh-oss/dotmesh/pkg/notification/nats"
 
 	"github.com/opentracing/opentracing-go"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"

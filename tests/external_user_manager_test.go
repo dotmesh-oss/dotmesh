@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 
-	"github.com/dotmesh-io/citools"
+	"github.com/dotmesh-oss/citools"
 
 	log "github.com/sirupsen/logrus"
 )

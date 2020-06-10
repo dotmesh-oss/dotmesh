@@ -20,9 +20,9 @@ import (
 	"golang.org/x/sys/unix"
 
 	"github.com/blang/semver"
-	"github.com/dotmesh-io/dotmesh/cmd/dm/pkg/pki"
-	"github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/cmd/dm/pkg/pki"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	"github.com/spf13/cobra"
 )
 
@@ -853,7 +853,7 @@ func clusterCommonSetup(clusterUrl, adminPassword, adminKey, pkiPath string, sto
 						"\nUnable to connect to dotmesh server after 120s, " +
 							"please run `docker logs dotmesh-server` " +
 							"and paste the result into an issue at " +
-							"https://github.com/dotmesh-io/dotmesh/issues/new\n")
+							"https://github.com/dotmesh-oss/dotmesh/issues/new\n")
 				}
 				fmt.Printf(".")
 				time.Sleep(250 * time.Millisecond)
@@ -1211,7 +1211,7 @@ func clusterJoin(cmd *cobra.Command, args []string, out io.Writer) error {
 	// Now get PKI assets from discovery service.
 	// TODO: discovery service should mint new credentials just for us, rather
 	// than handing us the keys to the kingdom.
-	// https://github.com/dotmesh-io/dotmesh/issues/21
+	// https://github.com/dotmesh-oss/dotmesh/issues/21
 	//fmt.Printf("clusterUrl: %s\n", clusterUrl)
 	getPath := fmt.Sprintf("%s/_secrets/_%s", clusterUrl, clusterSecret)
 	//fmt.Printf("getPath: %s\n", getPath)

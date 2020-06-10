@@ -18,9 +18,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/metrics"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/metrics"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

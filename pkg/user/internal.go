@@ -6,11 +6,11 @@ import (
 
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/dotmesh-io/dotmesh/pkg/crypto"
-	"github.com/dotmesh-io/dotmesh/pkg/store"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/crypto"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 
 	log "github.com/sirupsen/logrus"
 )

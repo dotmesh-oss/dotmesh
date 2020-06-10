@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	"github.com/portworx/kvdb"
 	"github.com/portworx/kvdb/bolt"
 )

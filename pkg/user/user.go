@@ -3,7 +3,7 @@ package user
 import (
 	"fmt"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 // special admin user with global privs

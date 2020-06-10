@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 func TestWatchContainersA(t *testing.T) {

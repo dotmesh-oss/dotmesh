@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dotmesh-io/dotmesh/pkg/auth"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/auth"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 )
 
 // The following consts MUST MATCH those defined in cmd/dm/pkg/commands/cluster.go

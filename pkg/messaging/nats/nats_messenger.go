@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/messaging"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/messaging"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	nats "github.com/nats-io/go-nats"
 

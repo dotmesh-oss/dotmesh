@@ -8,10 +8,10 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/dotmesh-io/dotmesh/pkg/auth"
-	"github.com/dotmesh-io/dotmesh/pkg/store"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/auth"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 	"github.com/portworx/kvdb"
 
 	log "github.com/sirupsen/logrus"

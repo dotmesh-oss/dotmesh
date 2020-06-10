@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 // FQ - from filesystem id to a fully qualified ZFS filesystem

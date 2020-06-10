@@ -3,8 +3,8 @@ package fsm
 import (
 	"fmt"
 
-	dmclient "github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	dmclient "github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	log "github.com/sirupsen/logrus"
 )

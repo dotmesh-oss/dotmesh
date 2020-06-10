@@ -31,7 +31,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 type Remote interface {

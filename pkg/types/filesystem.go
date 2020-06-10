@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/container"
+	"github.com/dotmesh-oss/dotmesh/pkg/container"
 )
 
 type KVMeta struct {

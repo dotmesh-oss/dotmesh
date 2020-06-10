@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 func startEtcdContainer(clusterUrl, adminPassword, adminKey, pkiPath string) error {

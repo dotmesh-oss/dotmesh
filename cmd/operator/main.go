@@ -12,7 +12,7 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 
-	"github.com/dotmesh-io/dotmesh/pkg/messaging/nats"
+	"github.com/dotmesh-oss/dotmesh/pkg/messaging/nats"
 	"github.com/golang/glog"
 	v1 "k8s.io/api/core/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -1248,7 +1248,7 @@ func getDotmeshPVEnvs(poolNamePrefix string, pvcName string) []v1.EnvVar {
 		v1.EnvVar{
 			Name: "USE_POOL_NAME",
 			// Pool is named after the PVC, as per
-			// https://github.com/dotmesh-io/dotmesh/issues/348
+			// https://github.com/dotmesh-oss/dotmesh/issues/348
 			Value: poolNamePrefix + pvcName,
 		},
 		v1.EnvVar{

@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dotmesh-io/dotmesh/pkg/archiver"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/archiver"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	log "github.com/sirupsen/logrus"
 )
 

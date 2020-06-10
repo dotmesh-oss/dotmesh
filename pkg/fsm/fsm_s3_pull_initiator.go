@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
 )
 
 func s3PullInitiatorState(f *FsMachine) StateFn {

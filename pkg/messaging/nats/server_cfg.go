@@ -44,7 +44,7 @@ func DefaultConfig() *Config {
 		Logtime:     true,
 		Debug:       false,
 		Trace:       false,
-		MaxPayload:  1073741824, // for large zfs diff results, until https://github.com/dotmesh-io/dotmesh/issues/691 is fixed
+		MaxPayload:  1073741824, // for large zfs diff results, until https://github.com/dotmesh-oss/dotmesh/issues/691 is fixed
 	}
 }
 

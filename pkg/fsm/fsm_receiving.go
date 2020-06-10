@@ -11,11 +11,11 @@ import (
 
 	"golang.org/x/net/context"
 
-	dmclient "github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/registry"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
+	dmclient "github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/registry"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
 )
 
 // attempt to pull some snapshots from the master, based on some hint that it

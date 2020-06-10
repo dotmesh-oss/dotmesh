@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 func CalculatePrelude(snaps []types.Snapshot, toSnapshotId string) (types.Prelude, error) {
@@ -15,7 +15,7 @@ func CalculatePrelude(snaps []types.Snapshot, toSnapshotId string) (types.Prelud
 	// Intentionally empty prelude, as commit metadata is
 	// transmitted in a file in the dot now, and prelude
 	// performance suuuucks!
-	// https://github.com/dotmesh-io/dotmesh/issues/700
+	// https://github.com/dotmesh-oss/dotmesh/issues/700
 	return prelude, nil
 }
 

@@ -119,7 +119,7 @@ func (o *DefaultObserver) Publish(event string, data interface{}) error {
 		go func(outputChan chan interface{}) {
 			defer func() {
 				// recover from panic caused by writing to a closed channel, caused by Unsubscribe racing with Publish
-				// (see issue https://github.com/dotmesh-io/dotmesh/issues/53 )
+				// (see issue https://github.com/dotmesh-oss/dotmesh/issues/53 )
 				if r := recover(); r != nil {
 					return
 				}

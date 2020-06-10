@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/messaging/nats"
+	"github.com/dotmesh-oss/dotmesh/pkg/messaging/nats"
 
 	log "github.com/sirupsen/logrus"
 )

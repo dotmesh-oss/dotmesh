@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/citools"
-	"github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/citools"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	natsServer "github.com/nats-io/gnatsd/server"
 	natsTest "github.com/nats-io/gnatsd/test"
@@ -2073,7 +2073,7 @@ func TestTwoNodesSameCluster(t *testing.T) {
 	})
 
 	if false {
-		// This test is disabled until we fix https://github.com/dotmesh-io/dotmesh/issues/493 :-(
+		// This test is disabled until we fix https://github.com/dotmesh-oss/dotmesh/issues/493 :-(
 		t.Run("Divergence", func(t *testing.T) {
 			fsname := citools.UniqName()
 			citools.RunOnNode(t, node1, citools.DockerRun(fsname)+" sh -c 'echo WORLD > /foo/HELLO'")
