@@ -210,7 +210,7 @@ bash /vagrant/scripts/reset_vagrant.sh
 ```
 open smb://admin:password@172.17.1.178/vagrantshare
 ```
-This should open a shared network drive which allows you to edit files in the dotmesh-io folder of your vagrant machine go path from your host machine.
+This should open a shared network drive which allows you to edit files in the dotmesh-oss folder of your vagrant machine go path from your host machine.
 
 
 ## generic setup instructions
@@ -222,7 +222,7 @@ ssh-keygen ## If you haven't already
 ## Now add your ~/.ssh/id_rsa.pub to your user settings on Gitlab and Github
 mkdir -p $GOPATH/src/github.com/dotmesh-oss
 cd $GOPATH/src/github.com/dotmesh-oss
-git clone git@github.com:dotmesh-io/dotmesh
+git clone git@github.com:dotmesh-oss/dotmesh
 ```
 
 We're going to create `~/dotmesh-instrumentation` and
@@ -230,7 +230,7 @@ We're going to create `~/dotmesh-instrumentation` and
 
 ```
 cd ~/
-git clone git@github.com:dotmesh-io/dotmesh-instrumentation
+git clone git@github.com:dotmesh-oss/dotmesh-instrumentation
 cd dotmesh-instrumentation
 ./up.sh
 ```
@@ -240,7 +240,7 @@ for the integration tests.
 
 ```
 cd ~/
-git clone git@github.com:dotmesh-io/discovery.dotmesh.io
+git clone git@github.com:dotmesh-oss/discovery.dotmesh.io
 cd discovery.dotmesh.io
 ./start-local.sh
 ```
@@ -380,20 +380,20 @@ su - gitlab-runner
 
 # clone & setup the dotmesh-instrumentation repo
 cd ~/
-git clone git@github.com:dotmesh-io/dotmesh-instrumentation
+git clone git@github.com:dotmesh-oss/dotmesh-instrumentation
 cd dotmesh-instrumentation
 ./up.sh
 
 # clone the dotmesh repo
 mkdir -p $GOPATH/src/github.com/dotmesh-oss
 cd $GOPATH/src/github.com/dotmesh-oss
-git clone git@github.com:dotmesh-io/dotmesh.git
+git clone git@github.com:dotmesh-oss/dotmesh.git
 cd dotmesh
 ./prime.sh
 
 # clone & setup the discovery.dotmesh.io repo
 cd ~/
-git clone git@github.com:dotmesh-io/discovery.dotmesh.io
+git clone git@github.com:dotmesh-oss/discovery.dotmesh.io
 cd discovery.dotmesh.io
 ./start-local.sh
 

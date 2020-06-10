@@ -3,7 +3,7 @@ set -xe
 
 
 export GITHUB_HOST=${GITHUB_HOST:="github.com"}
-export GITHUB_ORG=${GITHUB_ORG:="dotmesh-io"}
+export GITHUB_ORG=${GITHUB_ORG:="dotmesh-oss"}
 export GITHUB_REPO=${GITHUB_REPO:="dotmesh"}
 export INSTRUMENTATION_REPO=${INSTRUMENTATION_REPO:="dotmesh-instrumentation"}
 export DISCOVERY_REPO=${DISCOVERY_REPO:="discovery.dotmesh.io"}

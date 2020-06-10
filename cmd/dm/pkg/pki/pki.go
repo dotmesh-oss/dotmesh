@@ -1,4 +1,4 @@
-// imported from kubernetes/kubeadm and modified by dotmesh-io
+// imported from kubernetes/kubeadm and modified by dotmesh-oss
 
 /*
 Copyright 2016 The Kubernetes Authors.
