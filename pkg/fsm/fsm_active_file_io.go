@@ -43,7 +43,7 @@ func (f *FsMachine) saveFile(file *types.InputFile) StateFn {
 	}
 
 	directoryPath := destPath[:strings.LastIndex(destPath, "/")]
-	err = os.MkdirAll(directoryPath, 0775)
+	err = os.MkdirAll(directoryPath, 0777)
 	if err != nil {
 		e := types.Event{
 			Name: types.EventNameSaveFailed,

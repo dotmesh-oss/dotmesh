@@ -118,7 +118,7 @@ func s3PushInitiatorState(f *FsMachine) StateFn {
 		// create a file under the last commit id in the appropriate place + dump out the new versions to it
 		directoryPath := fmt.Sprintf("%s/dm.s3-versions", utils.Mnt(f.filesystemId))
 		dirtyPathToS3Meta := fmt.Sprintf("%s/%s", directoryPath, latestSnap.Id)
-		err = os.MkdirAll(directoryPath, 0775)
+		err = os.MkdirAll(directoryPath, 0777)
 		if err != nil {
 			f.errorDuringTransfer("couldnt-create-metadata-subdot", err)
 			return backoffState
