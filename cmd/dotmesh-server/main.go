@@ -14,6 +14,7 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"syscall"
 	"time"
 
 	"github.com/dotmesh-oss/dotmesh/pkg/client"
@@ -60,6 +61,9 @@ func main() {
 	} else {
 		log.SetLevel(levelEnum)
 	}
+
+	// Make MkDirAll and related methods actually set the permissions they say they will.
+	syscall.Umask(0)
 
 	// TODO proper flag parsing
 	if len(os.Args) > 1 && os.Args[1] == "--guess-ipv4-addresses" {

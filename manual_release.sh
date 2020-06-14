@@ -4,7 +4,7 @@
 # Log into quay.io first.
 
 export REPOSITORY=quay.io/dotmesh/
-export DOCKER_TAG=release-0.8.2
-export VERSION=release-0.8.2
+export DOCKER_TAG=$(git describe --tags)
+export VERSION=$(git describe --tags)
 
 make release_all
