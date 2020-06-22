@@ -114,10 +114,13 @@ cat <<EOF >> /etc/hosts
 127.0.0.1 $(hostname).local
 EOF
 
-# install bazel
-apt-get -y install pkg-config zip g++ zlib1g-dev unzip python git-core
-curl -L -o bazel-installer.sh https://github.com/bazelbuild/bazel/releases/download/0.15.2/bazel-0.15.2-installer-linux-x86_64.sh
-chmod +x bazel-installer.sh && ./bazel-installer.sh --user
+# install zumount
+mkdir -p ~/gocode/src/github.com/dotmesh-oss
+cd ~/gocode/src/github.com/dotmesh-oss
+git clone git@github.com:dotmesh-oss/zumount
+cd zumount
+go build -o zumount main.go
+sudo cp zumount /usr/local/bin
 ```
 
 ## Setup - debian
