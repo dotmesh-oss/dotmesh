@@ -12,8 +12,8 @@ import (
 	"github.com/sirupsen/logrus"
 	logtest "github.com/sirupsen/logrus/hooks/test"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
 )
 
 var out = `CREATION
@@ -109,7 +109,7 @@ func createPoolAndFilesystem(t *testing.T) (z ZFS, fsName, defaultDotPath string
 	}
 
 	// Create the default dot (__default__):
-	err = os.MkdirAll(defaultDotPath, 0775)
+	err = os.MkdirAll(defaultDotPath, 0777)
 	if err != nil {
 		t.Fatalf("Failed to create __default__: %s", err)
 	}

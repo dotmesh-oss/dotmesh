@@ -10,7 +10,7 @@ go_library(
         "io.go",
         "pem.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/util/cert",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/util/cert",
     importpath = "k8s.io/client-go/util/cert",
 )
 

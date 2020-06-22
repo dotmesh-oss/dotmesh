@@ -14,12 +14,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/auth"
-	dmclient "github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/fsm"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/auth"
+	dmclient "github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/fsm"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 	"github.com/gorilla/mux"
 
 	log "github.com/sirupsen/logrus"

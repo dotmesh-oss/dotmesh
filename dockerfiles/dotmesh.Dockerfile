@@ -1,10 +1,10 @@
 FROM golang:1.12.5 AS build-env
 ARG VERSION
 ARG STABLE_DOCKER_TAG
-WORKDIR /usr/local/go/src/github.com/dotmesh-io/dotmesh
-COPY ./cmd /usr/local/go/src/github.com/dotmesh-io/dotmesh/cmd
-COPY ./pkg /usr/local/go/src/github.com/dotmesh-io/dotmesh/pkg
-COPY ./vendor /usr/local/go/src/github.com/dotmesh-io/dotmesh/vendor
+WORKDIR /usr/local/go/src/github.com/dotmesh-oss/dotmesh
+COPY ./cmd /usr/local/go/src/github.com/dotmesh-oss/dotmesh/cmd
+COPY ./pkg /usr/local/go/src/github.com/dotmesh-oss/dotmesh/pkg
+COPY ./vendor /usr/local/go/src/github.com/dotmesh-oss/dotmesh/vendor
 RUN cd cmd/dotmesh-server && go install -ldflags="-X main.serverVersion=${VERSION}"
 RUN cd cmd/dm && go install -ldflags="-s -X main.clientVersion=${VERSION} -X main.stableDockerTag=${STABLE_DOCKER_TAG}"
 RUN cd cmd/flexvolume && go install

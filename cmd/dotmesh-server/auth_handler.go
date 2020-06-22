@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/dotmesh-io/dotmesh/pkg/auth"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/auth"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 
 	log "github.com/sirupsen/logrus"
 )

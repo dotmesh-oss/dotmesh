@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/notification"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/notification"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	"github.com/nats-io/gnatsd/server"
 	"github.com/nats-io/gnatsd/test"
 )

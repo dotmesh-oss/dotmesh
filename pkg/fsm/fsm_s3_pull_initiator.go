@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
 )
 
 func s3PullInitiatorState(f *FsMachine) StateFn {
@@ -25,7 +25,7 @@ func s3PullInitiatorState(f *FsMachine) StateFn {
 
 	// create the version info subdot
 	versionsPath := fmt.Sprintf("%s/%s", utils.Mnt(f.filesystemId), "dm.s3-versions")
-	err = os.MkdirAll(versionsPath, 0775)
+	err = os.MkdirAll(versionsPath, 0777)
 	if err != nil {
 		f.errorDuringTransfer("cannot-create-versions-metadata-dir", err)
 		return backoffState
@@ -75,7 +75,7 @@ func s3PullInitiatorState(f *FsMachine) StateFn {
 	if bucketChanged {
 		snapshotId := uuid.New().String()
 		path := fmt.Sprintf("%s/%s", utils.Mnt(f.filesystemId), "dm.s3-versions")
-		err = os.MkdirAll(path, 0775)
+		err = os.MkdirAll(path, 0777)
 		if err != nil {
 			f.errorDuringTransfer("couldnt-create-metadata-subdot", err)
 			return backoffState

@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/archiver"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/archiver"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
 
 	securejoin "github.com/cyphar/filepath-securejoin"
 	log "github.com/sirupsen/logrus"
@@ -43,7 +43,7 @@ func (f *FsMachine) saveFile(file *types.InputFile) StateFn {
 	}
 
 	directoryPath := destPath[:strings.LastIndex(destPath, "/")]
-	err = os.MkdirAll(directoryPath, 0775)
+	err = os.MkdirAll(directoryPath, 0777)
 	if err != nil {
 		e := types.Event{
 			Name: types.EventNameSaveFailed,

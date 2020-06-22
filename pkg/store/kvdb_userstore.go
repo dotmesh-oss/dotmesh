@@ -3,7 +3,7 @@ package store
 import (
 	"github.com/portworx/kvdb"
 
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 
 	log "github.com/sirupsen/logrus"
 )

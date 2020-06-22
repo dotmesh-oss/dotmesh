@@ -19,10 +19,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/dotmesh-io/dotmesh/pkg/metrics"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/metrics"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 )
 
 const REQUEST_ID = "X-Request-Id"

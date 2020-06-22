@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/dotmesh-io/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/client"
 )
 
 func (s *InMemoryState) runLivenessServer() {

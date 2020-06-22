@@ -10,4 +10,4 @@ To update dependencies we use `dep`, and to build we're using `bazel`. This mean
   1. Renamed the dir to exclude the underscore
   1. Ran gazelle again
   1. Fixed paths in `BUILD.bazel` for that dir and any other build files which reference it.
-- for some reason the openzipkin dependency tends to cause gazelle to generate a new global it can't resolve (e.g [this line](https://github.com/dotmesh-io/dotmesh/blob/master/vendor/github.com/openzipkin/zipkin-go-opentracing/BUILD.bazel#L41) is replaced with `@openzipkin_go_opentracing_crap//_thrift/files/...`). Not sure why this happens, but I have just replaced the global with the full path.
+- for some reason the openzipkin dependency tends to cause gazelle to generate a new global it can't resolve (e.g [this line](https://github.com/dotmesh-oss/dotmesh/blob/master/vendor/github.com/openzipkin/zipkin-go-opentracing/BUILD.bazel#L41) is replaced with `@openzipkin_go_opentracing_crap//_thrift/files/...`). Not sure why this happens, but I have just replaced the global with the full path.

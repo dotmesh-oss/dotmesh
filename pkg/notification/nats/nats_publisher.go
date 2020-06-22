@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	// "github.com/dotmesh-io/dotmesh/pkg/stopper"
-	// "github.com/dotmesh-io/dotmesh/pkg/timeutil"
+	// "github.com/dotmesh-oss/dotmesh/pkg/stopper"
+	// "github.com/dotmesh-oss/dotmesh/pkg/timeutil"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/notification"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/notification"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	nats "github.com/nats-io/go-nats"
 

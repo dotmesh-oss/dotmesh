@@ -1,4 +1,4 @@
-module github.com/dotmesh-io/dotmesh
+module github.com/dotmesh-oss/dotmesh
 
 go 1.14
 
@@ -23,8 +23,8 @@ require (
 	github.com/cyphar/filepath-securejoin v0.2.2
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/docker/distribution v2.6.2+incompatible // indirect
-	github.com/dotmesh-io/citools v0.0.0-20200414134058-7aa7221e95a0
-	github.com/dotmesh-io/go-checkpoint v0.0.0-20180205120253-edad9decbae8
+	github.com/dotmesh-oss/citools v0.0.0-20200414134058-7aa7221e95a0
+	github.com/dotmesh-oss/go-checkpoint v0.0.0-20180205120253-edad9decbae8
 	github.com/dsnet/compress v0.0.1 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/eapache/go-resiliency v1.1.0 // indirect

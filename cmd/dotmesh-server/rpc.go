@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/container"
-	"github.com/dotmesh-io/dotmesh/pkg/registry"
-	"github.com/dotmesh-io/dotmesh/pkg/store"
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/container"
+	"github.com/dotmesh-oss/dotmesh/pkg/registry"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
@@ -22,10 +22,10 @@ import (
 	uuid "github.com/nu7hatch/gouuid"
 	"golang.org/x/net/context"
 
-	"github.com/dotmesh-io/dotmesh/pkg/auth"
-	dmclient "github.com/dotmesh-io/dotmesh/pkg/client"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/auth"
+	dmclient "github.com/dotmesh-oss/dotmesh/pkg/client"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -811,7 +811,7 @@ func (d *DotmeshRPC) Commit(
 	/* Non-admin users are allowed to commit, as a temporary measure
 		      until a way of making the frontend tests work without it is found.
 
-	      Please uncomment this code and close https://github.com/dotmesh-io/dotmesh/issues/577
+	      Please uncomment this code and close https://github.com/dotmesh-oss/dotmesh/issues/577
 	      when resolved.
 
 			err := ensureAdminUser(r)
@@ -2242,7 +2242,7 @@ func (d *DotmeshRPC) Delete(r *http.Request, args *VolumeName, result *bool) err
 
 	// FUTURE WORK: If we ever need to delete just some clones, we
 	// can do so by picking a different rootId here. See
-	// https://github.com/dotmesh-io/dotmesh/issues/58
+	// https://github.com/dotmesh-oss/dotmesh/issues/58
 	rootId := filesystem.MasterBranch.Id
 
 	// Check all clones are not in use. This is no guarantee one won't

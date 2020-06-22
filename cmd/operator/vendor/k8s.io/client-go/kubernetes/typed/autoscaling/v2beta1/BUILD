@@ -8,7 +8,7 @@ go_library(
         "generated_expansion.go",
         "horizontalpodautoscaler.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v2beta1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v2beta1",
     importpath = "k8s.io/client-go/kubernetes/typed/autoscaling/v2beta1",
     visibility = ["//visibility:public"],
     deps = [

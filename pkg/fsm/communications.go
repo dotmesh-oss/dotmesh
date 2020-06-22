@@ -3,7 +3,7 @@ package fsm
 import (
 	"fmt"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 // anything to do with passing events and states back from the current state, or telling the user stuff happened

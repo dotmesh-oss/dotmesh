@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dotmesh-io/citools"
+	"github.com/dotmesh-oss/citools"
 )
 
 func s3cmd(params string) string {

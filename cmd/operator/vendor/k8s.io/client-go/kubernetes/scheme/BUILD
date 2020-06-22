@@ -11,7 +11,7 @@ go_library(
         "doc.go",
         "register.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/scheme",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/scheme",
     importpath = "k8s.io/client-go/kubernetes/scheme",
     deps = [
         "//cmd/operator/vendor/k8s.io/api/admissionregistration/v1alpha1:go_default_library",

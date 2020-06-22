@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dotmesh-io/dotmesh/pkg/stopper"
-	"github.com/dotmesh-io/dotmesh/pkg/timeutil"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/stopper"
+	"github.com/dotmesh-oss/dotmesh/pkg/timeutil"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	log "github.com/sirupsen/logrus"
 )

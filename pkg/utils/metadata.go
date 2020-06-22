@@ -3,7 +3,7 @@ package utils
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	"regexp"
 )
 

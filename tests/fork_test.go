@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dotmesh-io/citools"
+	"github.com/dotmesh-oss/citools"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 type ForkRequest struct {

@@ -1,6 +1,6 @@
 package fsm
 
-import "github.com/dotmesh-io/dotmesh/pkg/types"
+import "github.com/dotmesh-oss/dotmesh/pkg/types"
 
 func (f *FsMachine) GetMetadata(nodeID string) map[string]string {
 	res := make(map[string]string)

@@ -18,10 +18,10 @@ import (
 	"github.com/portworx/kvdb/bolt"
 	"golang.org/x/net/context"
 
-	"github.com/dotmesh-io/dotmesh/pkg/store"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/user"
-	"github.com/dotmesh-io/dotmesh/pkg/uuid"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/uuid"
 
 	log "github.com/sirupsen/logrus"
 )

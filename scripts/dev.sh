@@ -15,7 +15,7 @@ export CI_DOCKER_SERVER_IMAGE=${CI_DOCKER_SERVER_IMAGE:=$(hostname).local:80/dot
 export DEV_NETWORK_NAME=${DEV_NETWORK_NAME:="dotmesh-dev"}
 export VAGRANT_HOME=${VAGRANT_HOME:="/vagrant"}
 export GOOS=${GOOS:="darwin"}
-export VAGRANT_GOPATH=${VAGRANT_GOPATH:="$GOPATH/src/github.com/dotmesh-io/dotmesh"}
+export VAGRANT_GOPATH=${VAGRANT_GOPATH:="$GOPATH/src/github.com/dotmesh-oss/dotmesh"}
 
 # Use the binary that we just built, rather than one that's lying around on
 # your system.
@@ -98,7 +98,7 @@ function vagrant-list-changed-files() {
 
 function vagrant-copy-changed-files() {
   for file in $CHANGED_FILES; do
-    copypcommand="cp -r /vagrant/$file /home/vagrant/gocode/src/github.com/dotmesh-io/dotmesh/$file"
+    copypcommand="cp -r /vagrant/$file /home/vagrant/gocode/src/github.com/dotmesh-oss/dotmesh/$file"
     echo $copypcommand
     eval $copypcommand
   done

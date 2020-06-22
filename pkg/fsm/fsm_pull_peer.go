@@ -1,6 +1,6 @@
 package fsm
 
-import "github.com/dotmesh-io/dotmesh/pkg/types"
+import "github.com/dotmesh-oss/dotmesh/pkg/types"
 
 func pullPeerState(f *FsMachine) StateFn {
 	// This is kind-of a boring state. An authenticated user can GET a

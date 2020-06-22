@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/cmd/dm/pkg/commands"
+	"github.com/dotmesh-oss/dotmesh/cmd/dm/pkg/commands"
 
 	"github.com/opentracing/opentracing-go"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"

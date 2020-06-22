@@ -16,7 +16,7 @@ go_library(
         "role.go",
         "rolebinding.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1",
     importpath = "k8s.io/client-go/kubernetes/typed/rbac/v1",
     deps = [
         "//cmd/operator/vendor/k8s.io/api/rbac/v1:go_default_library",

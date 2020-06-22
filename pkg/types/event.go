@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/container"
+	"github.com/dotmesh-oss/dotmesh/pkg/container"
 )
 
 func init() {

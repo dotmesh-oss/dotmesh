@@ -16,7 +16,7 @@ cd $HOME/discovery.dotmesh.io
 git pull
 ./start-local.sh
 
-cd $GOPATH/src/github.com/dotmesh-io/dotmesh
+cd $GOPATH/src/github.com/dotmesh-oss/dotmesh
 git pull
 if [ -z "$SKIP_K8S" ]; then
   ./prime.sh

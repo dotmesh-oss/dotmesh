@@ -9,7 +9,7 @@ go_library(
         "mutatingwebhookconfiguration.go",
         "validatingwebhookconfiguration.go",
     ],
-    importmap = "github.com/dotmesh-io/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
+    importmap = "github.com/dotmesh-oss/dotmesh/cmd/operator/vendor/k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
     importpath = "k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
     visibility = ["//visibility:public"],
     deps = [

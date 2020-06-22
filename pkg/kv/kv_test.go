@@ -3,7 +3,7 @@ package kv
 import (
 	"testing"
 
-	"github.com/dotmesh-io/dotmesh/pkg/testutil"
+	"github.com/dotmesh-oss/dotmesh/pkg/testutil"
 )
 
 func TestSetGet(t *testing.T) {

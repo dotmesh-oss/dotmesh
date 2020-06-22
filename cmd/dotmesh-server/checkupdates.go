@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/registry"
-	cp "github.com/dotmesh-io/go-checkpoint"
+	"github.com/dotmesh-oss/dotmesh/pkg/registry"
+	cp "github.com/dotmesh-oss/go-checkpoint"
 )
 
 func (state *InMemoryState) checkForUpdates() error {

@@ -3,7 +3,7 @@ set -xe
 
 
 export GITHUB_HOST=${GITHUB_HOST:="github.com"}
-export GITHUB_ORG=${GITHUB_ORG:="dotmesh-io"}
+export GITHUB_ORG=${GITHUB_ORG:="dotmesh-oss"}
 export GITHUB_REPO=${GITHUB_REPO:="dotmesh"}
 export INSTRUMENTATION_REPO=${INSTRUMENTATION_REPO:="dotmesh-instrumentation"}
 export DISCOVERY_REPO=${DISCOVERY_REPO:="discovery.dotmesh.io"}
@@ -27,7 +27,7 @@ if [ -z "${GOPATH}" ]; then
   export PATH=/home/vagrant/bin:$PATH
   echo "export GOPATH=${GOPATH}" >> $HOME/.bash_profile
   echo "export PATH=\$HOME/bin:\$PATH" >> $HOME/.bash_profile
-  echo "export DM_FOLDER=\$GOPATH/src/github.com/dotmesh-io/dotmesh" >> $HOME/.bash_profile
+  echo "export DM_FOLDER=\$GOPATH/src/github.com/dotmesh-oss/dotmesh" >> $HOME/.bash_profile
 fi
 
 mkdir -p $GOPATH

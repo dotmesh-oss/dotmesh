@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
-	"github.com/dotmesh-io/dotmesh/pkg/zfs"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/zfs"
 )
 
 // TODO: remove that environment getter and replace with parameter

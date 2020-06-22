@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/dotmesh-io/dotmesh/pkg/user"
+	"github.com/dotmesh-oss/dotmesh/pkg/user"
 )
 
 const authenticationUserIDContextKey = "authenticated-user-id"

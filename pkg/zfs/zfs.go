@@ -18,9 +18,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/dotmesh-io/dotmesh/pkg/metrics"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
-	"github.com/dotmesh-io/dotmesh/pkg/utils"
+	"github.com/dotmesh-oss/dotmesh/pkg/metrics"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -161,7 +161,7 @@ func (z *zfs) Mount(filesystemId, snapshotId, options, mountPath string) ([]byte
 	fullFilesystemId := FullIdWithSnapshot(filesystemId, snapshotId)
 	zfsFullId := z.fullZFSFilesystemPath(filesystemId, snapshotId)
 	// TODO less redirection here too?
-	err := os.MkdirAll(mountPath, 0775)
+	err := os.MkdirAll(mountPath, 0777)
 	if err != nil {
 		log.Printf("[Mount:%s] %v while trying to create dir %s", fullFilesystemId, err, mountPath)
 		log.WithFields(log.Fields{
@@ -907,7 +907,7 @@ func (z *zfs) Diff(filesystemID string) ([]types.ZFSFileDiff, error) {
 	// Don't delete this, it's used by tests:
 	log.WithFields(log.Fields{"diff_used_cache": false}).Debug("Didn't use the cache")
 
-	err = os.MkdirAll(tmpMnt, 0775)
+	err = os.MkdirAll(tmpMnt, 0777)
 	if err != nil {
 		log.WithError(err).Error("[diff] error mkdir tmpMnt")
 		return nil, err
@@ -955,7 +955,7 @@ func (z *zfs) Diff(filesystemID string) ([]types.ZFSFileDiff, error) {
 		log.Infof("setting up new diffSideCache for filesystem %s", filesystemID)
 		// do all setup for latestMnt only in the case that we actually need it
 		// (can't read it from in-memory cache)
-		err := os.MkdirAll(latestMnt, 0775)
+		err := os.MkdirAll(latestMnt, 0777)
 		if err != nil {
 			log.WithError(err).Error("[diff] error mkdir latestMnt")
 			return nil, err

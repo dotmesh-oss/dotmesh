@@ -21,7 +21,7 @@ function fetch_zfs {
         echo "ZFS is not installed on your docker host, and unable to find a kernel module for your kernel: $KERN"
         echo "Please create a new GitHub issue, pasting this error message, and tell me which Linux distribution you are using, at:"
         echo
-        echo "    https://github.com/dotmesh-io/dotmesh/issues"
+        echo "    https://github.com/dotmesh-oss/dotmesh/issues"
         echo
         echo "Meanwhile, you should still be able to use dotmesh if you install ZFS manually on your host system by following the instructions at http://zfsonlinux.org/ and then re-run the dotmesh installer."
         echo
@@ -73,7 +73,7 @@ SYSTEM_LIB=/system-lib
 # This assumes that $DIR _is_ the mountpoint of the block device, for
 # example a kubernetes-provided PV.
 #
-# Further reading: https://github.com/dotmesh-io/dotmesh/issues/333
+# Further reading: https://github.com/dotmesh-oss/dotmesh/issues/333
 
 if [ -n "$CONTAINER_POOL_MNT" ]; then
     echo "Attaching to a zpool from a container mount. $DIR is the mountpoint in the container..."
@@ -189,7 +189,7 @@ else
     echo "Kernel ZFS version ($KERNEL_ZFS_VERSION) doesn't match 0.6, 0.7 or 0.8, not supported"
     echo
     echo "Trying to download kernel modules again and then restarting in case we're hitting"
-    echo "https://github.com/dotmesh-io/dotmesh/issues/542"
+    echo "https://github.com/dotmesh-oss/dotmesh/issues/542"
     fetch_zfs
     exit 1
 fi
@@ -222,7 +222,7 @@ if ! run_in_zfs_container zpool-status zpool status $POOL; then
     if [ ! -f $FILE ]; then
         truncate -s $POOL_SIZE $FILE
         run_in_zfs_container zpool-create zpool create -m none $POOL "$OUTER_DIR/dotmesh_data"
-        echo "This directory contains dotmesh data files, please leave them alone unless you know what you're doing. See github.com/dotmesh-io/dotmesh for more information." > $DIR/README
+        echo "This directory contains dotmesh data files, please leave them alone unless you know what you're doing. See github.com/dotmesh-oss/dotmesh for more information." > $DIR/README
         run_in_zfs_container zpool-get zpool get -H guid $POOL |cut -f 3 > $DIR/dotmesh_pool_id
         if [ -n "$CONTAINER_POOL_PVC_NAME" ]; then
             echo "$CONTAINER_POOL_PVC_NAME" > $DIR/dotmesh_pvc_name

@@ -1,4 +1,4 @@
-// imported from kubernetes/kubeadm and modified by dotmesh-io
+// imported from kubernetes/kubeadm and modified by dotmesh-oss
 
 /*
 Copyright 2016 The Kubernetes Authors.
@@ -26,7 +26,7 @@ import (
 	"net"
 	"path"
 
-	certutil "github.com/dotmesh-io/dotmesh/cmd/dm/pkg/cert"
+	certutil "github.com/dotmesh-oss/dotmesh/cmd/dm/pkg/cert"
 )
 
 type Configuration struct {

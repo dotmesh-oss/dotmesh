@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/dotmesh-io/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
 
 	uuid "github.com/nu7hatch/gouuid"
 )

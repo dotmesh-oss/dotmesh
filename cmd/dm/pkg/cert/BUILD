@@ -11,6 +11,6 @@ go_library(
         "io.go",
         "pem.go",
     ],
-    importpath = "github.com/dotmesh-io/dotmesh/cmd/dm/pkg/cert",
+    importpath = "github.com/dotmesh-oss/dotmesh/cmd/dm/pkg/cert",
     tags = ["automanaged"],
 )

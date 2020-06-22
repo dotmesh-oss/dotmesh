@@ -3,7 +3,7 @@ package store
 import (
 	"encoding/json"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 	"github.com/portworx/kvdb"
 
 	log "github.com/sirupsen/logrus"

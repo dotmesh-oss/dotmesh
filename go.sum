@@ -43,10 +43,10 @@ github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumC
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/docker/distribution v2.6.2+incompatible h1:4FI6af79dfCS/CYb+RRtkSHw3q1L/bnDjG1PcPZtQhM=
 github.com/docker/distribution v2.6.2+incompatible/go.mod h1:J2gT2udsDAN96Uj4KfcMRqY0/ypR+oyYUYmja8H+y+w=
-github.com/dotmesh-io/citools v0.0.0-20200414134058-7aa7221e95a0 h1:pwBorePv/CwmfiNuYlkXLScGKxzDwX9eC/nlTCQdrVo=
-github.com/dotmesh-io/citools v0.0.0-20200414134058-7aa7221e95a0/go.mod h1:mgL3l7/iXmNIqueqvklY7WJNAib5awi85pNC9SdpTdA=
-github.com/dotmesh-io/go-checkpoint v0.0.0-20180205120253-edad9decbae8 h1:2lR61Gxgz6G+5XQKnSZALHgsr87X3tEb88EIBPSpBpI=
-github.com/dotmesh-io/go-checkpoint v0.0.0-20180205120253-edad9decbae8/go.mod h1:PmRuPwLMlsM6rVnG8tfx1o+wNpfjet7OSdvl/2sil9c=
+github.com/dotmesh-oss/citools v0.0.0-20200414134058-7aa7221e95a0 h1:pwBorePv/CwmfiNuYlkXLScGKxzDwX9eC/nlTCQdrVo=
+github.com/dotmesh-oss/citools v0.0.0-20200414134058-7aa7221e95a0/go.mod h1:mgL3l7/iXmNIqueqvklY7WJNAib5awi85pNC9SdpTdA=
+github.com/dotmesh-oss/go-checkpoint v0.0.0-20180205120253-edad9decbae8 h1:2lR61Gxgz6G+5XQKnSZALHgsr87X3tEb88EIBPSpBpI=
+github.com/dotmesh-oss/go-checkpoint v0.0.0-20180205120253-edad9decbae8/go.mod h1:PmRuPwLMlsM6rVnG8tfx1o+wNpfjet7OSdvl/2sil9c=
 github.com/dsnet/compress v0.0.1 h1:PlZu0n3Tuv04TzpfPbrnI0HW/YwodEXDS+oPKahKF0Q=
 github.com/dsnet/compress v0.0.1/go.mod h1:Aw8dCMJ7RioblQeTqt88akK31OvO8Dhf5JflhBbQEHo=
 github.com/dsnet/golib v0.0.0-20171103203638-1ea166775780/go.mod h1:Lj+Z9rebOhdfkVLjJ8T6VcRQv3SXugXy999NBtR9aFY=

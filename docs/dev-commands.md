@@ -213,7 +213,7 @@ bash /vagrant/scripts/reset_vagrant.sh
 ```
 open smb://admin:password@172.17.1.178/vagrantshare
 ```
-This should open a shared network drive which allows you to edit files in the dotmesh-io folder of your vagrant machine go path from your host machine.
+This should open a shared network drive which allows you to edit files in the dotmesh-oss folder of your vagrant machine go path from your host machine.
 
 
 ## generic setup instructions
@@ -223,9 +223,9 @@ Assuming you have set your GOPATH (e.g. to `$HOME/gocode`):
 ```
 ssh-keygen ## If you haven't already
 ## Now add your ~/.ssh/id_rsa.pub to your user settings on Gitlab and Github
-mkdir -p $GOPATH/src/github.com/dotmesh-io
-cd $GOPATH/src/github.com/dotmesh-io
-git clone git@github.com:dotmesh-io/dotmesh
+mkdir -p $GOPATH/src/github.com/dotmesh-oss
+cd $GOPATH/src/github.com/dotmesh-oss
+git clone git@github.com:dotmesh-oss/dotmesh
 ```
 
 We're going to create `~/dotmesh-instrumentation` and
@@ -233,7 +233,7 @@ We're going to create `~/dotmesh-instrumentation` and
 
 ```
 cd ~/
-git clone git@github.com:dotmesh-io/dotmesh-instrumentation
+git clone git@github.com:dotmesh-oss/dotmesh-instrumentation
 cd dotmesh-instrumentation
 ./up.sh
 ```
@@ -243,7 +243,7 @@ for the integration tests.
 
 ```
 cd ~/
-git clone git@github.com:dotmesh-io/discovery.dotmesh.io
+git clone git@github.com:dotmesh-oss/discovery.dotmesh.io
 cd discovery.dotmesh.io
 ./start-local.sh
 ```
@@ -255,7 +255,7 @@ You have to do some one-off setup and priming of docker images before these
 tests will run:
 
 ```
-cd $GOPATH/src/github.com/dotmesh-io/dotmesh
+cd $GOPATH/src/github.com/dotmesh-oss/dotmesh
 bash ./scripts/prime.sh
 ```
 
@@ -267,7 +267,7 @@ bash ./scripts/prime.sh
 To run the test suite, run:
 
 ```
-cd $GOPATH/src/github.com/dotmesh-io/dotmesh
+cd $GOPATH/src/github.com/dotmesh-oss/dotmesh
 ./scripts/prep-tests.sh && ./scripts/test.sh -short
 ```
 
@@ -287,7 +287,7 @@ example.
 
 ### NEW: AUTOMATED CI SETUP
 
-This process is now automated here: [https://github.com/dotmesh-io/ops/blob/master/setup-gitlab-runner.sh](https://github.com/dotmesh-io/ops/blob/master/setup-gitlab-runner.sh)
+This process is now automated here: [https://github.com/dotmesh-oss/ops/blob/master/setup-gitlab-runner.sh](https://github.com/dotmesh-oss/ops/blob/master/setup-gitlab-runner.sh)
 
 ### OLD MANUAL SETUP FOLLOWS
 
@@ -304,7 +304,7 @@ gitlab-runner ALL=(ALL:ALL) NOPASSWD:ALL
 
 MsacOS runners should similarly have a GitLab runner installed, and should
 additionally have
-[auto-upgrade-docker](https://github.com/dotmesh-io/auto-upgrade-docker)
+[auto-upgrade-docker](https://github.com/dotmesh-oss/auto-upgrade-docker)
 configured so that we can track breaking changes to Docker for Mac.
 
 When you are asked details in the registration phase, here's what I did for a Ubuntu runner:
@@ -383,20 +383,20 @@ su - gitlab-runner
 
 # clone & setup the dotmesh-instrumentation repo
 cd ~/
-git clone git@github.com:dotmesh-io/dotmesh-instrumentation
+git clone git@github.com:dotmesh-oss/dotmesh-instrumentation
 cd dotmesh-instrumentation
 ./up.sh
 
 # clone the dotmesh repo
-mkdir -p $GOPATH/src/github.com/dotmesh-io
-cd $GOPATH/src/github.com/dotmesh-io
-git clone git@github.com:dotmesh-io/dotmesh.git
+mkdir -p $GOPATH/src/github.com/dotmesh-oss
+cd $GOPATH/src/github.com/dotmesh-oss
+git clone git@github.com:dotmesh-oss/dotmesh.git
 cd dotmesh
 ./prime.sh
 
 # clone & setup the discovery.dotmesh.io repo
 cd ~/
-git clone git@github.com:dotmesh-io/discovery.dotmesh.io
+git clone git@github.com:dotmesh-oss/discovery.dotmesh.io
 cd discovery.dotmesh.io
 ./start-local.sh
 

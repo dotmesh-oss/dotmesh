@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dotmesh-io/dotmesh/pkg/fsm"
-	"github.com/dotmesh-io/dotmesh/pkg/store"
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/fsm"
+	"github.com/dotmesh-oss/dotmesh/pkg/store"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 
 	log "github.com/sirupsen/logrus"
 )

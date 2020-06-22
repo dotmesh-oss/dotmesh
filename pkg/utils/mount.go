@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dotmesh-io/dotmesh/pkg/types"
+	"github.com/dotmesh-oss/dotmesh/pkg/types"
 )
 
 // random bits of code I couldn't find a good place for

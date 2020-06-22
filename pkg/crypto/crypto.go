@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/crypto/scrypt"
 
-	"github.com/dotmesh-io/dotmesh/pkg/validator"
+	"github.com/dotmesh-oss/dotmesh/pkg/validator"
 )
 
 // Keygen parameters

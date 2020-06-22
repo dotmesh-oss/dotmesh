@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dotmesh-io/citools"
+	"github.com/dotmesh-oss/citools"
 )
 
 func TestS3ApiMultiNode(t *testing.T) {
