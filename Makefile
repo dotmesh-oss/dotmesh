@@ -11,6 +11,9 @@ build_server:
 build_dind_prov: 
 	docker build -t ${REPOSITORY}dind-dynamic-provisioner:${DOCKER_TAG} . -f dockerfiles/dind-provisioner.Dockerfile
 
+build_dind_flexvolume: 
+	mkdir -p target && CGO_ENABLED=0 go build -ldflags "-w -s -X main.clientVersion=${VERSION} -X main.dockerTag=${DOCKER_TAG}" -o target/dind-flexvolume ./cmd/dotmesh-server/pkg/dind-flexvolume/flexvolume.go
+
 push_server: 
 	docker push ${REPOSITORY}dotmesh-server:${DOCKER_TAG}
 

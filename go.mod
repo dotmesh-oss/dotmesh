@@ -9,7 +9,6 @@ require (
 	github.com/Shopify/toxiproxy v2.1.4+incompatible // indirect
 	github.com/andybalholm/brotli v1.0.0 // indirect
 	github.com/apache/thrift v0.0.0-20161119155631-84d6af4cf903 // indirect
-	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/asaskevich/govalidator v0.0.0-20180315120708-ccb8e960c48f // indirect
 	github.com/aws/aws-sdk-go v1.14.19
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973 // indirect
@@ -25,7 +24,6 @@ require (
 	github.com/docker/distribution v2.6.2+incompatible // indirect
 	github.com/dotmesh-oss/citools v0.0.0-20200414134058-7aa7221e95a0
 	github.com/dotmesh-oss/go-checkpoint v0.0.0-20180205120253-edad9decbae8
-	github.com/dsnet/compress v0.0.1 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/eapache/go-resiliency v1.1.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20160609142408-bb955e01b934 // indirect
@@ -48,21 +46,18 @@ require (
 	github.com/gogo/protobuf v1.0.0 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20180513044358-24b0969c4cb7 // indirect
-	github.com/golang/snappy v0.0.1 // indirect
+	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf // indirect
 	github.com/google/uuid v1.1.0
 	github.com/googleapis/gnostic v0.2.0 // indirect
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/handlers v1.3.0
-	github.com/gorilla/mux v1.6.2
+	github.com/gorilla/mux v1.7.4
 	github.com/gorilla/rpc v1.1.1-0.20180618141230-5c1378103183
 	github.com/gorilla/websocket v1.2.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.4.1 // indirect
-	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.0.0-20171218145408-d5fe4b57a186 // indirect
-	github.com/hashicorp/go-immutable-radix v1.0.0 // indirect
-	github.com/hashicorp/go-multierror v1.0.0 // indirect
 	github.com/hashicorp/memberlist v0.1.4 // indirect
 	github.com/howeyc/gopass v0.0.0-20170109162249-bf9dde6d0d2c
 	github.com/imdario/mergo v0.3.5 // indirect
@@ -101,7 +96,6 @@ require (
 	github.com/petar/GoLLRB v0.0.0-20130427215148-53be0d36a84c // indirect
 	github.com/pierrec/lz4 v2.5.2+incompatible // indirect
 	github.com/pkg/errors v0.8.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/portworx/kvdb v0.0.0-20200330200952-71ae616a5956
 	github.com/prometheus/client_golang v0.8.0
 	github.com/prometheus/client_model v0.0.0-20171117100541-99fa1f4be8e5 // indirect
@@ -109,7 +103,6 @@ require (
 	github.com/prometheus/procfs v0.0.0-20180629160828-40f013a808ec // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20180503174638-e2704e165165 // indirect
 	github.com/rusenask/kvdb v0.0.0-20190516133219-ba4127d5b9cc // indirect
-	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/soheilhy/cmux v0.1.4 // indirect
@@ -120,12 +113,10 @@ require (
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20171017195756-830351dc03c6 // indirect
 	github.com/ugorji/go v1.1.1 // indirect
 	github.com/ulikunitz/xz v0.5.7 // indirect
-	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	github.com/xiang90/probing v0.0.0-20160813154853-07dd2e8dfe18 // indirect
 	golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
 	golang.org/x/net v0.0.0-20190311183353-d8887717615a
 	golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae
-	golang.org/x/text v0.3.0 // indirect
 	golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2 // indirect
 	google.golang.org/genproto v0.0.0-20180627194029-ff3583edef7d // indirect
 	google.golang.org/grpc v1.13.0 // indirect
